@@ -9,3 +9,12 @@ AguspeDB is composed of the following modules:
 Query flow:
 
 SQL → Parser → Executor → Storage → Disk
+
+uses fixed-size pages of 8192 bytes.
+
+Each page contains:
+
+- PageHeader
+- Slot directory
+- Free space
+- Row data
