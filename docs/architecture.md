@@ -18,3 +18,8 @@ Each page contains:
 - Slot directory
 - Free space
 - Row data
+
+Each slot contains:
+-Offset
+-Length
+-Flag (deleted)
