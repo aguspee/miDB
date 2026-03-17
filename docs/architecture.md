@@ -1,4 +1,4 @@
-AguspeDB is composed of the following modules:
+HexDB is composed of the following modules:
 
 - Parser
 - Executor
