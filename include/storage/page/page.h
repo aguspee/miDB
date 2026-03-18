@@ -4,7 +4,6 @@
 class Page
 {
 
-  
 public:
     static constexpr uint16_t PAGE_SIZE = 8192;
 
@@ -28,12 +27,12 @@ public:
     Slot getSlot(uint16_t slotIndex);
     void setSlot(uint16_t slotIndex, Slot &slot); // posicion, slot
     uint16_t getFreeSpace();
-    std::optional<uint16_t> insertRow(const char* rowData, uint16_t length);// devuelve template si falla nada, si sirve index
+    std::optional<uint16_t> insertRow(const char *rowData, uint16_t length); // devuelve template si falla nada, si sirve index
     bool deleteRow(uint16_t slotIndex);
-    
-    const char* rawData() const; //solo lecutra
-    char* rawData();//se puede modificar
-private:
-char data[PAGE_SIZE];  
 
+    const char *rawData() const; // solo lecutra
+    char *rawData();             // se puede modificar
+    
+    private:
+    char data[PAGE_SIZE];
 };
